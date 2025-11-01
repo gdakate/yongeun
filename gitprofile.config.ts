@@ -181,7 +181,7 @@ seo: {
     from: '2020',
     to: '2024',
   },
-]
+],
   publications: [
   {
     title: 'Real-time Shopping Assistant for the Visually Impaired',
