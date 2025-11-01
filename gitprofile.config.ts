@@ -31,28 +31,73 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+
+      projects: {
+  github: {
+    display: true,
+    header: 'GitHub Projects',
+    mode: 'automatic',
+    automatic: {
+      sortBy: 'updated',
+      limit: 6,
+      exclude: { forks: true, projects: [] },
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
-  social: {
+  external: {
+    header: 'Highlighted Projects',
+    projects: [
+      {
+        title: 'F.A.W.N: Face Anonymization With Neural Networks',
+        description:
+          'Enhanced diffusion-based anonymization model; reduced inference time by 53% without quality loss. Designed multi-metric evaluation using FID, AGR, and Re-ID.',
+        imageUrl: 'https://img.freepik.com/free-photo/ai-face-anonymization.jpg',
+        link: '',
+      },
+      {
+        title: 'Real-time Shopping Assistant for the Visually Impaired',
+        description:
+          'YOLOv8 + MediaPipe–based mobile vision system enabling audio-guided grocery shopping for visually impaired users.',
+        imageUrl: 'https://img.freepik.com/free-photo/supermarket-app-ai.jpg',
+        link: '',
+      },
+      {
+        title: 'Drug Interaction and Adverse Event Prevention App',
+        description:
+          'Developed backend (Spring Boot + GCP) integrating public APIs to detect drug conflicts and generate personalized warnings.',
+        imageUrl: 'https://img.freepik.com/free-photo/medical-ai-app.jpg',
+        link: '',
+      },
+    ],
+  },
+},
+
+      
+      // projects: [
+      //   {
+      //     title: 'Project Name',
+      //     description:
+      //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+      //     imageUrl:
+      //       'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+      //     link: 'https://example.com',
+      //   },
+      //   {
+      //     title: 'Project Name',
+      //     description:
+      //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+      //     imageUrl:
+      //       'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+      //     link: 'https://example.com',
+      //   },
+      // ],
+  //   },
+  // },
+seo: { 
+  title: 'Portfolio of Yongeun Cho', 
+  description: 'AI & Computer Vision Researcher | Data Science M.S. at Stony Brook University', 
+  imageURL: '',
+},
+      social: {
     linkedin: 'yongeuncho',
     website: '',
     phone: '',
@@ -86,63 +131,77 @@ const CONFIG = {
   'Computer Vision',
   ],
   experiences: [
+     {
+    company: 'Computer Vision Lab, Stony Brook University',
+    position: 'Graduate Researcher (Advisor: Prof. Zhaozheng Yin)',
+    from: '2025',
+    to: 'Present',
+    // companyLink: 'https://www.stonybrook.edu/',
+  },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Mand.ro',
+    position: 'Software Engineering Intern – Prosthetic Hand Project',
+    from: 'Aug 2024',
+    to: 'Sep 2024',
+    // companyLink: 'https://mand.ro/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+    company: 'Snowrose Reorganization Task Force',
+    position: 'Backend Developer',
+    from: 'Feb 2024',
+    to: 'Aug 2024',
+    // companyLink: '',
+    },
+    {
+      company: 'Sookmyung Women’s University',
+    position: 'Undergraduate Researcher – Assistive AI & ML Applications',
+    from: 'Sep 2023',
+    to: 'Aug 2024',
+    // companyLink: 'https://www.sookmyung.ac.kr/',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  // certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
+  {
+    institution: 'Stony Brook University',
+    degree: 'M.S. in Data Science',
+    from: '2025',
+    to: 'Present',
+  },
+  {
+    institution: 'Sookmyung Women’s University',
+    degree: 'B.S. in IT Engineering',
+    from: '2020',
+    to: '2024',
+  },
+]
   publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
+  {
+    title: 'Real-time Shopping Assistant for the Visually Impaired',
+    conferenceName: 'Korean Entertainment Media Society Fall Conference 2024',
+    journalName: '',
+    authors: 'Y.E. Cho, J.W. Lee',
+    link: '',
+    description:
+      'Developed a real-time grocery shopping assistant app using YOLOv8 and MediaPipe; enhanced accessibility for visually impaired users.',
+  },
+  {
+    title: 'A Study on Drug Interaction and Side Effect Prevention',
+    conferenceName: 'Korea Digital Content Society Summer Conference 2024',
+    journalName: '',
+    authors: 'Y.E. Cho, J.W. Lee',
+    link: '',
+    description:
+      'Proposed a drug management and interaction prevention system integrating public health APIs and GCP-based backend infrastructure.',
+  },
+]
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
