@@ -17,10 +17,10 @@ const CONFIG = {
       },
       // 수동 모드는 비워둠
       manual: { projects: [
-        https://github.com/ksta-google-simz/fawn,
-        https://github.com/gdakate/DataVisualization,
-        https://github.com/gdakate/sayosayo_ML,
-        https://github.com/dsc-sookmyung/2023-High-Light-SolutionChallenge
+        'ksta-google-simz/fawn',
+    'gdakate/DataVisualization',
+    'gdakate/sayosayo_ML',
+    'dsc-sookmyung/2023-High-Light-SolutionChallenge',
       ] },
     },
     external: {
@@ -29,10 +29,10 @@ const CONFIG = {
         {
           title: 'F.A.W.N: Face Anonymization With Neural Networks',
           description:
-            '- Improved inference efficiency of diffusion-based anonymization model by 53% (18.6s to 8.7s) through identity-exclusion mechanism and hyperparameter optimization.
+            `- Improved inference efficiency of diffusion-based anonymization model by 53% (18.6s to 8.7s) through identity-exclusion mechanism and hyperparameter optimization.
 - Designed identity-leakage evaluation pipeline using Re-ID rate, FID, and demographic similarity metrics (age, gender, race) to quantify privacy-utility tradeoffs.
 - Implemented identity-exclusion logic to reduce privacy risk while maintaining perceptual realism and facial attribute preservation.
-- Awarded 2nd Prize at the 2025 KSTA NIPA Google ML Bootcamp for technical innovation and practical impact.',
+- Awarded 2nd Prize at the 2025 KSTA NIPA Google ML Bootcamp for technical innovation and practical impact.`,
           imageUrl:
             'https://img.freepik.com/free-photo/ai-face-anonymization.jpg',
           link: 'https://github.com/ksta-google-simz/fawn', // 깃허브/시연 링크 생기면 넣기
@@ -40,8 +40,8 @@ const CONFIG = {
     {
           title: 'Medical Image Segmentation with Vision Foundation Models (Ongoing)',
           description:
-            '- Applying Segment Anything Model (SAM) to medical imaging datasets (Kvasir-SEG, NCI-ISBI 2013) to address domain gap challenges in zero-shot segmentation performance.
-- Developing gaze-guided prompting strategies for domain-specific segmentation, leveraging eye-tracking data as weak supervision signals to reduce annotation costs.',
+            `- Applying Segment Anything Model (SAM) to medical imaging datasets (Kvasir-SEG, NCI-ISBI 2013) to address domain gap challenges in zero-shot segmentation performance.
+- Developing gaze-guided prompting strategies for domain-specific segmentation, leveraging eye-tracking data as weak supervision signals to reduce annotation costs.`,
           imageUrl:
            '',
           link: '',
@@ -49,10 +49,10 @@ const CONFIG = {
         {
           title: 'Real-time Shopping Assistant for the Visually Impaired',
           description:
-            '- Built YOLOv8-based object detection system optimized for cluttered grocery environments, achieving 83% accuracy through data refinement and augmentation strategies.
-- Designed real-time inference pipeline (Flask + AWS EC2) achieving sub-second latency for on-device product identification.
+            `- Built YOLOv8-based object detection system optimized for cluttered grocery environments, achieving 83% accuracy through data refinement and augmentation strategies.
+              - Designed real-time inference pipeline (Flask + AWS EC2) achieving sub-second latency for on-device product identification.
 - Integrated gesture recognition (MediaPipe) for multimodal interaction, enabling hands-free operation with audio feedback for visually impaired users.
-- Awarded 2nd place in the IPS AI Competition for innovative application of computer vision to accessibility challenges.',
+- Awarded 2nd place in the IPS AI Competition for innovative application of computer vision to accessibility challenges.`,
           imageUrl:
             'https://img.freepik.com/free-photo/supermarket-app-ai.jpg',
           link: 'https://github.com/orgs/smwu-ips-Sayosayo/repositories',
@@ -89,7 +89,9 @@ const CONFIG = {
     // 레포 루트에 PDF 올리고 아래 raw URL로 교체하세요.
     // 예: https://raw.githubusercontent.com/gdakate/yongeun/main/Yongeun%20Cho.pdf
     fileUrl:
-      'https://raw.githubusercontent.com/gdakate/yongeun/main/Yongeun%20Cho.pdf',
+      'https://raw.githubusercontent.com/gdakate/yongeun/main/AI.pdf
+',
+    
   },
 
   skills: [
