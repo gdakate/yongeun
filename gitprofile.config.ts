@@ -90,7 +90,7 @@ const CONFIG = {
     // 예: https://raw.githubusercontent.com/gdakate/yongeun/main/Yongeun%20Cho.pdf
     fileUrl:
       'https://raw.githubusercontent.com/gdakate/yongeun/main/AI.pdf
-',
+'
     
   },
 
