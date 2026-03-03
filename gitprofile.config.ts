@@ -29,10 +29,10 @@ const CONFIG = {
         {
           title: 'F.A.W.N: Face Anonymization With Neural Networks',
           description:
-            `- Improved inference efficiency of diffusion-based anonymization model by 53% (18.6s to 8.7s) through identity-exclusion mechanism and hyperparameter optimization.
-- Designed identity-leakage evaluation pipeline using Re-ID rate, FID, and demographic similarity metrics (age, gender, race) to quantify privacy-utility tradeoffs.
-- Implemented identity-exclusion logic to reduce privacy risk while maintaining perceptual realism and facial attribute preservation.
-- Awarded 2nd Prize at the 2025 KSTA NIPA Google ML Bootcamp for technical innovation and practical impact.`,
+            `• 53% faster diffusion anonymization (18.6s → 8.7s) via identity-exclusion + tuning
+• Built privacy–utility evaluation: Re-ID rate, FID, demographic similarity (age/gender/race)
+• Reduced identity leakage while preserving realism and facial attributes
+• 2nd Prize — 2025 KSTA NIPA Google ML Bootcamp`,
           imageUrl:
             'https://img.freepik.com/free-photo/ai-face-anonymization.jpg',
           link: 'https://github.com/ksta-google-simz/fawn', // 깃허브/시연 링크 생기면 넣기
@@ -40,19 +40,20 @@ const CONFIG = {
     {
           title: 'Medical Image Segmentation with Vision Foundation Models (Ongoing)',
           description:
-            `- Applying Segment Anything Model (SAM) to medical imaging datasets (Kvasir-SEG, NCI-ISBI 2013) to address domain gap challenges in zero-shot segmentation performance.
-- Developing gaze-guided prompting strategies for domain-specific segmentation, leveraging eye-tracking data as weak supervision signals to reduce annotation costs.`,
-          imageUrl:
+            `• Applied SAM to medical datasets (Kvasir-SEG, NCI-ISBI 2013) to study zero-shot domain gap
+• Developing gaze-guided prompting using eye-tracking as weak supervision to reduce annotation cost`,
+        // 빈 문자열은 런타임에서 터질 수 있어서 placeholder 추천
+         imageUrl:
            '',
           link: '',
         },
         {
           title: 'Real-time Shopping Assistant for the Visually Impaired',
           description:
-            `- Built YOLOv8-based object detection system optimized for cluttered grocery environments, achieving 83% accuracy through data refinement and augmentation strategies.
-              - Designed real-time inference pipeline (Flask + AWS EC2) achieving sub-second latency for on-device product identification.
-- Integrated gesture recognition (MediaPipe) for multimodal interaction, enabling hands-free operation with audio feedback for visually impaired users.
-- Awarded 2nd place in the IPS AI Competition for innovative application of computer vision to accessibility challenges.`,
+             `• YOLOv8 detection for cluttered groceries; 83% accuracy via data refinement and augmentation
+• Real-time pipeline (Flask + AWS EC2) with sub-second latency
+• MediaPipe gesture control + audio feedback for hands-free use
+• 2nd Place — IPS AI Competition`,
           imageUrl:
             'https://img.freepik.com/free-photo/supermarket-app-ai.jpg',
           link: 'https://github.com/orgs/smwu-ips-Sayosayo/repositories',
@@ -169,7 +170,7 @@ const CONFIG = {
       authors: 'Y.E. Cho, J.W. Lee',
       link: '',
       description:
-        'YOLOv8 + MediaPipe 기반 실시간 시각장애인 쇼핑 보조 시스템.',
+        'Real-time Shopping Assistant for the Visually Impaired based on YOLOv8 + MediaPipe',
     },
     {
       title: 'A Study on Drug Interaction and Side Effect Prevention',
@@ -188,7 +189,7 @@ const CONFIG = {
   hotjar: { id: '', snippetVersion: 6 },
 
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'bumblebee',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
