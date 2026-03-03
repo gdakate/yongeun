@@ -80,7 +80,7 @@ const CONFIG = {
   social: {
     // 이력서의 링크드인 핸들 기준으로 수정
     // (resume에 표기: linkedin.com/in/yoneguncho)
-    linkedin: 'yoneguncho',
+    linkedin: 'https://www.linkedin.com/in/yongeuncho/',
     website: 'https://github.com/gdakate',
     phone: '',
     email: 'yongeun.cho@stonybrook.edu',
