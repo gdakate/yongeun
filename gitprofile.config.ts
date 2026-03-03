@@ -85,12 +85,12 @@ const CONFIG = {
     email: 'yongeun.cho@stonybrook.edu',
   },
 
-  resume: {
+  
     // 레포 루트에 PDF 올리고 아래 raw URL로 교체하세요.
     // 예: https://raw.githubusercontent.com/gdakate/yongeun/main/Yongeun%20Cho.pdf
-    fileUrl:
-      'https://raw.githubusercontent.com/gdakate/yongeun/main/AI.pdf'},
-
+    resume: {
+  fileUrl: 'https://raw.githubusercontent.com/gdakate/yongeun/main/AI.pdf',
+},
   skills: [
     // Core Languages
     'Python',
